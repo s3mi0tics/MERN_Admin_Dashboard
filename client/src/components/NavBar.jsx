@@ -32,7 +32,7 @@ const NavBar = () => {
                     <MenuIcon />
                 </IconButton>
                 <FlexBetween
-                    backgroundColor={theme.pallette.background.alt}
+                    backgroundColor={theme.palette.background.alt}
                     borderRadius = "9px"
                     gap="3rem"
                     p="0.1rem 1.5rem"
@@ -47,7 +47,7 @@ const NavBar = () => {
             {/* RIGHT SIDE */}
             <FlexBetween gap="1.5rem">
                 <IconButton onClick={() => dispatch(setMode())}>
-                    {theme.pallette.mode === 'dark' ? (
+                    {theme.palette.mode === 'dark' ? (
                         <DarkModeOutlined sx={{ fontSize: '25px'}} />
                     ):(
                         <LightModeOutlined sx={{ fontSize: "25px"}} />
