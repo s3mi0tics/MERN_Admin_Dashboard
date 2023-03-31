@@ -37,4 +37,4 @@ The MERN stack which included MongoDB, Express, React, and NodeJS
 
 Thank you to EdRoh for the indepth YouTube [tutorial](https://www.youtube.com/watch?v=0cPCMIuDk2I)
 
-All code will be organically typed and no copy and paste will be used
+All code will be organically typed and no copy and paste will be used.
