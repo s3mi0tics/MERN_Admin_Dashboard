@@ -12,7 +12,9 @@ import salesRoutes from "./routes/sales.js"
 
 //data imports
 import User from "./models/User.js"
-import { dataUser } from "./data/index.js"
+import Product from "./models/Products.js"
+import ProductStat from './models/ProductStat.js';
+import { dataUser, dataProduct, dataProductStat } from "./data/index.js"
 
 /* CONFIGURATION */
 dotenv.config();
@@ -39,5 +41,7 @@ mongoose.connect(process.env.MONGO_URL, {
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`))
     
     /*  ONLY ADD DATA ONE TIME */
+    // Product.insertMany(dataProduct);
+    // ProductStat.insertMany(dataProductStat);
     // User.insertMany(dataUser);
 }).catch((error) => console.log(`${error} did not connect`))
