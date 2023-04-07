@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Box, useMediaQuery } from '@mui/material'
 import { Outlet } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import NavBar from 'components/Navbar'
+import Navbar from 'components/Navbar'
 import Sidebar from 'components/Sidebar'
 import { useGetUserQuery } from 'state/api'
 
@@ -14,7 +14,6 @@ const Layout = () => {
 
   return (
     <Box display={isNonMobile ? 'flex' : 'block'} width="100%" height="100%">
-      <Box>
         <Sidebar
           user={data || {}}
           isNonMobile={isNonMobile}
@@ -23,7 +22,7 @@ const Layout = () => {
           setIsSidebarOpen={setIsSidebarOpen}
         />
         <Box flexGrow={1}>
-          <NavBar
+          <Navbar
             user={data || {}}
             isSidebarOpen={isSidebarOpen}
             setIsSidebarOpen={setIsSidebarOpen}
@@ -31,7 +30,7 @@ const Layout = () => {
           <Outlet />
         </Box>
       </Box>
-    </Box>
+
   )
 }
 
