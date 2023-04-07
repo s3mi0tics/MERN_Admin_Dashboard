@@ -29,9 +29,9 @@ import {
   PieChartOutlined,
 } from '@mui/icons-material'
 import { useEffect, useState } from 'react'
+import { useNavigate, useLocation } from 'react-router-dom'
 import FlexBetween from './FlexBetween'
 import profileImage from 'assets/me2.png'
-import { useNavigate, useLocation } from 'react-router-dom'
 
 const navItems = [
   {
@@ -100,7 +100,7 @@ const Sidebar = ({
   isNonMobile,
 }) => {
   const { pathname } = useLocation()
-  const [active, setActive] = useState('')
+  const [active, setActive] = useState("")
   const navigate = useNavigate()
   const theme = useTheme()
 
