@@ -38,10 +38,10 @@ export const getCustomers = async (req, res) => {
 export const getTransactions = async (req, res) => {
     try {
         // Sort should look like this: { "field": "userId", "sort": "desc" }
-        const { page = 1, pageSize = 20, sort = null, search = "" } = req.query
+        const { page = 1, pageSize = 20, sort = null, search = "" } = req.query;
         
         // Formatted sort should look like { userId: -1}
-        const gererateSort = () => {
+        const generateSort = () => {
             const sortParsed = JSON.parse(sort)
             const sortFormatted = {
                 [sortParsed.field]: sortParsed.sort = "asc" ? 1 : -1
@@ -64,7 +64,7 @@ export const getTransactions = async (req, res) => {
             name: { $regex: search, $options: "i" }
         })
 
-        res.status(404).json({
+        res.status(200).json({
             transactions,
             total,
         })
