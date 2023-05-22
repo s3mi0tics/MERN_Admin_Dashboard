@@ -22,14 +22,13 @@ export const getUserPerformance = async(req, res) => {
                     from: "affiliatestats",
                     localField: "_id",
                     foreignField: "userId",
-                    as: "affiliateStates"
+                    as: "affiliateStats"
                 },
-            }
+            },
             { $unwind: "$affiliateStats" }
         ])
-
         const saleTransactions = await Promise.all(
-            userWithStats[0].affiliateStates.affiliateSales.map((id) => {
+            userWithStats[0].affiliateStats.affiliateSales.map((id) => {
                 return Transaction.findById(id)
             })
         )
