@@ -8,7 +8,6 @@ import CustomColumnMenu from "components/DataGridCustomColumnMenu"
 const Admin = () => {
     const theme = useTheme();
     const { data, isLoading } = useGetAdminsQuery();
-    console.log("data", data);
 
     const columns = [
         {
