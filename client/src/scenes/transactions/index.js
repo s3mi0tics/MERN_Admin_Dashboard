@@ -5,12 +5,6 @@ import { useGetTransactionsQuery } from 'state/api'
 import Header from "components/Header"
 import DataGridCustomToolbar from 'components/DataGridCustomToolbar'
 
-
-
-
-
-
-
 const Transactions = () => {
   const theme = useTheme();
 
@@ -28,8 +22,7 @@ const Transactions = () => {
     sort: JSON.stringify(sort),
     search,
   })
-  console.log("data:", data)
-
+  
   const columns = [
     {
       field: "_id",
@@ -60,10 +53,6 @@ const Transactions = () => {
       renderCell: (params) => `$${Number(params.value).toFixed(2)}`,
     },
   ]
-
-
-
-
 
   return (
     <Box m="1.5rem 2.5rem">
