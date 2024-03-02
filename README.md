@@ -1,40 +1,63 @@
 # MERN Admin Dashboard
 
-In this repository I will build a complete full stack admin dashboard application using MERN from scratch.
+Welcome to the MERN Admin Dashboard repository, I built a comprehensive full-stack admin dashboard application using the MERN (MongoDB, Express, React, NodeJS) stack from the ground up.
 
-## This application will consist of
+## Application Features
 
-* A dashboard page with different stats, a line chart, a transaction table and a pie chart
-* A products page with a list of products with rating, description, category and see more button
-* A customers page where we have a data table about each customer
-* A transaction page with server side pagination
-* A geography page that will tell us where users are located
+### Dashboard Page
 
-* A line chart that shows the revenue by the month where we can swap from sales to units
-* A daily and monthly chart where we can choose different ranges of dates for our daily or monthly sales
-* A breakdown pie chart
-* An admin chart
+The dashboard page includes:
 
-## This application will use the following technologies
+- Various statistics for quick insights.
+- A line chart visualizing trends.
+- A transaction table for detailed transaction data.
+- A pie chart for a graphical representation of data.
 
-The MERN stack which included MongoDB, Express, React, and NodeJS
+### Products Page
+
+A dedicated page for managing products, showcasing:
+
+- Product list with ratings, descriptions, categories, and "see more" functionality.
+
+### Customers Page
+
+Detailed customer information presented in an organized data table.
+
+### Transaction Page
+
+Efficient server-side pagination for handling large sets of transaction data.
+
+### Geography Page
+
+An insightful view of user locations through a geographical representation.
+
+### Charts
+
+Various charts to provide a comprehensive overview:
+
+- A line chart illustrating monthly revenue, switchable between sales and units.
+- Daily and monthly charts with customizable date ranges for sales analysis.
+- A breakdown pie chart and an admin chart.
+
+## Technologies Used
 
 ### Frontend
 
-* nivo for charts
-* Material UI for styling
-* Material UI Data Grid for data tables
-* Redux Toolkit for state management
-* Redux Toolkit Query for making API calls
-* React Router
-* React Date Picker
+- [nivo](https://nivo.rocks/) for powerful charting capabilities.
+- [Material UI](https://material-ui.com/) for stylish and responsive design.
+- [Material UI Data Grid](https://material-ui.com/components/data-grid/) for efficient data table management.
+- [Redux Toolkit](https://redux-toolkit.js.org/) for state management.
+- [Redux Toolkit Query](https://redux-toolkit.js.org/rtk-query/overview) for streamlined API calls.
+- [React Router](https://reactrouter.com/) for smooth navigation.
+- [React Date Picker](https://reactdatepicker.com/) for date selection.
 
 ### Backend
 
-* NodeJS as a runtime
-* ExpressJS as a backend framework
-* Mongoose for managing our MongoDB
+- [NodeJS](https://nodejs.org/) as the runtime environment.
+- [ExpressJS](https://expressjs.com/) as the backend framework.
+- [Mongoose](https://mongoosejs.com/) for MongoDB management.
 
-Thank you to EdRoh for the indepth YouTube [tutorial](https://www.youtube.com/watch?v=0cPCMIuDk2I)
+## Acknowledgments
 
-All code will be organically typed and no copy and paste will be used.
+Special thanks to [EdRoh](https://www.youtube.com/watch?v=0cPCMIuDk2I) for an in-depth YouTube tutorial. All code in this repository is authentically crafted, without resorting to copy-paste practices.
+
